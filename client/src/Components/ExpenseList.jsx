@@ -45,7 +45,7 @@ export const ExpenseList = () => {
     useEffect( () => {
         const fetchExp = async() => {
             try{
-                const res = await fetch("http://localhost:5000/api/expenses");
+                const res = await fetch(`${import.meta.env.VITE_API_URL}/api/expenses`);
                 const data = await res.json();
                 setExpenses(data);
             }
@@ -65,7 +65,7 @@ export const ExpenseList = () => {
     );
     const handleDelete = async(id) => {
         try{
-            await fetch(`${import.meta.env.VITE_URL}/api/expenses/${id}`,{
+            await fetch(`${import.meta.env.VITE_API_URL}/api/expenses/${id}`,{
                 method : "DELETE",  
             });
             setExpenses((exp) => exp.filter((e) => e.id !== id));

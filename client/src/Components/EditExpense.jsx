@@ -16,7 +16,7 @@ export const EditExpense = ({expense , onUpdate , onCancel}) => {
         const handleSave = async() => {
             setSaving(true);
         try{
-            const res = await fetch(`${import.meta.env.VITE_URL}/api/expenses}/${expense.id}`,{
+            const res = await fetch(`${import.meta.env.VITE_API_URL}/api/expenses/${expense.id}`,{
                 method : "PUT",
                 headers : {"Content-Type" : "application/json"},
                 body : JSON.stringify({...form , amount : Number(form.amount) }),
