@@ -13,6 +13,8 @@ Database: PostgreSQL (Supabase hosted)
 Deployment: Vercel (frontend) , Render(backend)
 
 ##Project Structure
+
+```
 ExpenseTracker/
 ├── client/
 |   |── public/
@@ -55,6 +57,7 @@ ExpenseTracker/
     ├── index.js
     |──package-lock.json
     └── package.json
+```
     
 ## API Documentation
 ### Base URL
