@@ -138,10 +138,10 @@ Delete an expense by ID.
 - Edit expenses inline in the table
 - Delete expenses
 - Filter by category and date range (this month, last month, custom)
-- Summary panel — total spent, per category, highest expense
+- Summary panel -> total spent, per category, highest expense
 - Pie chart of spend by category (updates live with filters)
 - Export filtered expenses to CSV
-- Responsive layout —> works on mobile, tablet and desktop
+- Responsive layout -> works on mobile, tablet and desktop
 
 ## Next Steps
 
