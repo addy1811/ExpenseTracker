@@ -65,7 +65,7 @@ export const ExpenseList = () => {
     );
     const handleDelete = async(id) => {
         try{
-            await fetch(`http://localhost:5000/api/expenses/${id}`,{
+            await fetch(`${import.meta.env.VITE_URL}/api/expenses/${id}`,{
                 method : "DELETE",  
             });
             setExpenses((exp) => exp.filter((e) => e.id !== id));

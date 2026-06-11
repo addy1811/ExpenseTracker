@@ -27,7 +27,7 @@ export const ExpenseForm = () => {
 
         setLoading(true);
         try{
-            await fetch("http://localhost:5000/api/expenses", {
+            await fetch(`${import.meta.env.VITE_URL}/api/expenses`, {
                 method : "POST",
                 headers : { "Content-Type" : "application/json"},
                 body : JSON.stringify({...form , amount : Number(form.amount) }),
