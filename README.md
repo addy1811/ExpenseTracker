@@ -6,11 +6,11 @@ Build an expense tracker that lets a user log their daily spending across catego
 - Backend: https://expense-tracker-h0xa.onrender.com
 
 ## Tech Stack
-Frontend: React 19, Vite, React Router v7
-Charts: Recharts v3
-Backend: Node.js Express v5
-Database: PostgreSQL (Supabase hosted)
-Deployment: Vercel (frontend) , Render(backend)
+- Frontend: React 19, Vite, React Router v7
+- Charts: Recharts v3
+- Backend: Node.js Express v5
+- Database: PostgreSQL (Supabase hosted)
+- Deployment: Vercel (frontend) , Render(backend)
 
 ## Project Structure
 
